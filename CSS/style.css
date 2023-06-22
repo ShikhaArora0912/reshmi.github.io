@@ -1,0 +1,136 @@
+#wrapper{
+              display: grid;
+              grid-template-areas:
+                  
+"innergrid0 innergrid0 innergrid0"
+                  "header header header"
+"innergrid1 innergrid1 innergrid1"
+                  "nav nav nav"
+"innergrid2 innergrid2 innergrid2"
+                "innergrid4 innergrid4 innergrid4"
+                  "content content content"
+                  "innergrid3 innergrid3 innergrid3"
+ "footer footer footer"
+              }
+ #header, #nav, #content,#footer, #home, #aboutme, #culture, #academic, #copy, #phone, #header1, #green{
+    border: 1px solid;}
+
+body{
+        margin: 0;
+        padding: 0;
+    }
+
+#header{
+
+     grid-area: header;
+
+    background-color: #6A8562
+}
+
+
+#innergrid0{
+    display: grid;
+    grid-area: innergrid2;
+    text-align: left;
+    grid-template-areas: "logo profile";
+    padding: 2px; 
+}
+
+ #nav{
+
+    grid-area: nav;
+    background-color: #2F4E26;
+}
+
+ #home{
+    background-color: #EBE9D1;
+}
+
+ #culture{
+
+    background-color: #EBE9D1;
+}
+
+ #academic{
+    background-color: #EBE9D1;
+}
+
+ #aboutme{
+    background-color: #EBE9D1;
+}
+ #innergrid1{
+display: grid;
+    grid-area: innergrid1;
+     text-align: center;
+      grid-template-areas: "reshmi home culture academic aboutme";
+     padding-bottom: 5px;
+         padding-top: 5px;
+     padding-left: 5px;
+     padding-right: 5px;
+     grid-row-gap: 5px;
+}
+
+
+#content{
+
+    grid-area: content;
+
+    background-color: #EBE9D1
+}
+
+#header1{
+    background-color: #2F4E26;
+}
+
+#innergrid2{
+display: grid;
+    grid-area: innergrid2;
+    background-color: #EBE9D1;
+     text-align: center;
+      grid-template-areas: "red  orange  header1 yellow mission";
+    padding-left: 30px;
+    padding-right: 30px;
+     padding-top: 10px;
+    padding-bottom: 10px
+}
+#green{
+    background-color: #6A8562;
+}
+#innergrid4{
+display: grid;
+    grid-area: innergrid4;
+    background-color: #EBE9D1;
+     text-align: center;
+      grid-template-areas: "green cyan";
+    padding-left: 300px;
+    padding-right: 400px;
+     padding-top: 30px;
+    padding-bottom: 30px
+}
+
+#purple{
+    background-color: #6A8562;
+}
+#innergrid5{
+display: grid;
+    grid-area: innergrid4;
+    background-color: #EBE9D1;
+     text-align: center;
+      grid-template-areas: "blue violet purple";
+    padding-left: 380px;
+    padding-right: 200px;
+     padding-top: 30px;
+    padding-bottom: 30px
+}
+#footer{
+
+    grid-area: footer;
+    background-color: #2F4E26
+}
+
+#innergrid3{
+display: grid;
+    grid-area: innergrid3;
+    background-color: #2F4E26;
+      grid-template-areas: "contact phone copy";
+}
